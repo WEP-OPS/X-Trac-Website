@@ -160,14 +160,34 @@ h3 {
 }
 
 .logo {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--white);
+  font-weight: 900;
+  color: #F5F1E6;
   letter-spacing: -0.02em;
 }
 
 .logo span { color: var(--gold); }
+
+/* Brand wordmark treatment (matches dealer brochure) */
+.wordmark {
+  font-family: var(--font-body);
+  font-weight: 900;
+  color: #F5F1E6;
+  letter-spacing: -0.02em;
+}
+.wordmark span { color: var(--gold); }
+
+/* Hero lockup: wordmark on its own line with gold rule beneath (brochure cover) */
+.hero-wordmark { display: block; }
+.hero-rule {
+  display: block;
+  width: 72px;
+  height: 6px;
+  background: var(--gold);
+  margin: 16px 0 18px;
+}
+.hero-tagline { display: block; white-space: nowrap; font-size: 0.82em; color: rgba(255, 255, 255, 0.78); }
 
 .nav-links {
   display: flex;
@@ -1303,6 +1323,7 @@ h3 {
 
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; gap: var(--s4); text-align: center; }
+  .hero-rule { margin-left: auto; margin-right: auto; }
   .hero-content { padding: 0; }
   .hero-content p { max-width: 100%; margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
