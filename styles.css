@@ -477,13 +477,13 @@ h3 {
 }
 
 .trust-bar-inner {
-  max-width: 1120px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: var(--s4) var(--s3);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--s6);
+  gap: var(--s5);
 }
 
 .trust-divider {
@@ -514,6 +514,15 @@ h3 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.35);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.maple-leaf {
+  display: block;
+  margin: 0 auto;
+  width: 28px;
+  height: 28px;
 }
 
 
